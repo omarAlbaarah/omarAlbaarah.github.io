@@ -1,0 +1,25 @@
+body{
+color: #404040;
+font-size:11pt;
+font-family:Georgia,Garamond, sans-serif;
+}
+h1{
+	color: #A4A400;
+	background-color: #F0F0F0; 
+	font-family: Lucida Sans Unicode, Helvetica, Arial, sans-serif;
+	text-decoration: underline;
+	font-size: 18pt;
+}
+#FirstHeader{
+	text-align: center;
+	font-size: 22pt;
+}
+a{
+	color: #A4A400;
+}
+p.intro {
+  background-color: #FFFFA8;
+}
+.footer-class{
+ float:right;
+}
