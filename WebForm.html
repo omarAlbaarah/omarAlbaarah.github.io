@@ -7,6 +7,7 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <script src="javaScript/webForm1.js"></script>
 </head>
 <body>
 
@@ -23,13 +24,13 @@
       id="password" placeholder="Enter password" name="password">
     </div>
     <div class="checkbox">
-      <label><input type="checkbox" name="checkMeOut"> check me out</label>
+      <label><input type="checkbox" name="checkMeOut" id="checkMeOut"> check me out</label>
     </div>
     <div class="form-group">
         <label>website</label>
-        <input class="form-control"  type="url"  required name="website" pattern="https?://.+" title="Please enter a URL" >
+        <input class="form-control"  type="url"  required name="website" id="website" pattern="https?://.+" title="Please enter a URL" >
       </div>
-    <button type="submit" class="btn-primary">Submit</button>
+    <button type="submit" class="btn-primary" onclick="printLogin()">Submit</button>
   </form>
 </div>
 

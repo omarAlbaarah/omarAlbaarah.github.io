@@ -10,6 +10,7 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
     
     <title>Web Form 2</title>
+    <script src="javaScript/webForm2.js"></script>
 </head>
 <body>
     
@@ -37,33 +38,33 @@
     </nav>
      
     <div class="container">
-        <form>
+        <form id=frm>
       <h1> New Product Form</h1>
         <div class="row">
             <div class="col-sm-6">
                
                     <div class="form-group">
                       <label>Product Number</label>
-                      <input type="text" class="form-control" name="ProductNumber">
+                      <input type="text" class="form-control" name="ProductNumber" id="ProductNumber">
                     </div>
                     <div class="form-group">
                       <label>Name</label>
-                      <input type="text" class="form-control" name="name">
+                      <input type="text" class="form-control" name="name" id="name">
                     </div>
                     <div class="form-group">
                       <label>Unit price</label>
-                      <input type="number" class="form-control" placeholder="0.0" name="price">
+                      <input type="number" class="form-control" placeholder="0.0" id="price" name="price">
                     </div>
                  
             </div>
             <div class="col-sm-6">
                     <div class="form-group">
                       <label>Quanity in stock</label>
-                      <input type="number" class="form-control" name="QuanityInStock">
+                      <input type="number" class="form-control" name="QuanityInStock" id="QuanityInStock">
                     </div>
                     <div class="form-group">
                       <label>supplier</label>
-                      <select name="supplier" class="form-control">
+                      <select name="supplier" class="form-control" id="supplier">
                         <option selected>select</option>
                         <option>supplier 1</option>
                         <option>supplier 2</option>
@@ -73,14 +74,14 @@
                     </div>
                     <div class="form-group">
                       <label>date supplied</label>
-                      <input type="date" class="form-control" name="suppliedDate">
+                      <input type="date" class="form-control" name="suppliedDate" id="suppliedDate">
                     </div>
             </div>
         </div>
         <div id="buttons">
             <button type="reset" class="btn btn-outline-secondary">Reset</button>
             <button type="reset" class="btn btn-outline-danger">Cancle</button>
-            <button type="submit" class="btn btn-outline-primary">Add product</button>
+            <button type="button" class="btn btn-outline-primary" onclick="PrintProduct()">Add product</button>
         </div>
     </form>
       </div>
