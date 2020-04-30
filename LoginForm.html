@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Login form using jquery</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <script src="javaScript/loginForm.js"></script>
+</head>
+<body>
+
+<div class="container">
+  <form>
+    <div class="form-group">
+      <label for="email">Email address</label>
+      <input type="email" class="form-control"  required id="email" placeholder="Enter email" name="email">
+      <label> we will never share your email with anyone else.</label>
+    </div>
+    <div class="form-group">
+      <label>Password</label>
+      <input type="password" class="form-control" required pattern="(?=\d+)(?=[a-z]*)(?=[A-Z]*).{10,}"   title="10 characters minimum and at least 1 number and 1 upper case and 1 lower case" 
+      id="password" placeholder="Enter password" name="password">
+    </div>
+    <div class="checkbox">
+      <label><input type="checkbox" name="checkMeOut" id="checkMeOut"> check me out</label>
+    </div>
+    <div class="form-group">
+        <label>website</label>
+        <input class="form-control"  type="url"  required name="website" id="website" pattern="https?://.+" title="Please enter a URL" >
+      </div>
+    <button type="button" class="btn-primary" onclick="printLogin()">Submit</button>
+  </form>
+</div>
+
+</body>
+</html>

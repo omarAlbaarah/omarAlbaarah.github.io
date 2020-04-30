@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/form2.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    
+    <title>Product form using jquery</title>
+    <script src="javaScript/productForm.js"></script>
+</head>
+<body>
+    
+    <nav class="navbar navbar-expand-sm bg-primary navbar-dark sticky-top">
+        <a class="navbar-brand" href="#">Mum Golden Dom Market:::SRM System</a>
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="#">| Product</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">| supplier</a>
+          </li>
+        </ul>
+        <div class="navbar-nav ml-auto">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Hello!</a>
+                    </li>
+                    <li class="nav-item">
+                        <button type="submit" class="btn btn-light">Sign Out</button>
+                    </li>
+                  </ul>
+          </div>
+            
+    </nav>
+     
+    <div class="container">
+        <form id=frm>
+      <h1> New Product Form</h1>
+        <div class="row">
+            <div class="col-sm-6">
+               
+                    <div class="form-group">
+                      <label>Product Number</label>
+                      <input type="text" class="form-control" name="ProductNumber" id="ProductNumber">
+                    </div>
+                    <div class="form-group">
+                      <label>Name</label>
+                      <input type="text" class="form-control" name="name" id="name">
+                    </div>
+                    <div class="form-group">
+                      <label>Unit price</label>
+                      <input type="number" class="form-control" placeholder="0.0" id="price" name="price">
+                    </div>
+                 
+            </div>
+            <div class="col-sm-6">
+                    <div class="form-group">
+                      <label>Quanity in stock</label>
+                      <input type="number" class="form-control" name="QuanityInStock" id="QuanityInStock">
+                    </div>
+                    <div class="form-group">
+                      <label>supplier</label>
+                      <select name="supplier" class="form-control" id="supplier">
+                        <option selected>select</option>
+                        <option>supplier 1</option>
+                        <option>supplier 2</option>
+                        <option>supplier 3</option>
+                        <option>supplier 4</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                      <label>date supplied</label>
+                      <input type="date" class="form-control" name="suppliedDate" id="suppliedDate">
+                    </div>
+            </div>
+        </div>
+        <div id="buttons">
+            <button type="reset" class="btn btn-outline-secondary">Reset</button>
+            <button type="reset" class="btn btn-outline-danger">Cancle</button>
+            <button type="button" class="btn btn-outline-primary" onclick="PrintProduct()">Add product</button>
+        </div>
+    </form>
+      </div>
+    
+</body>
+</html>
